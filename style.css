@@ -17,3 +17,34 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
 }
+
+/***************
+nav
+*************/
+.navbar {
+    background: var(--black);
+    padding: 0;
+    margin: 0;
+    border-top: 5px solid var(--orange);
+}
+.navbar-brand {
+    color: var(--white);
+    background: var(--orange);
+    padding: 15px 40px;
+    text-shadow: 0 0 2px var(--black);
+    transition: var(--transition);
+}
+.navbar-brand:hover{
+    color: var(--black);
+    text-shadow: 0 0 2px var(--white);
+}
+.navbar .nav-link {
+    color: var(--orange);
+    font-size: 20px;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+.navbar .nav-link:hover {
+    color: var(--white);
+    transition: var(--transition);
+}
