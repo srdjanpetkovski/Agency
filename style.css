@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Ubuntu:wght@400;700&display=swap');
+:root {
+    --white: #fff;
+    --orange: rgb(255, 138, 91);
+    --siva: #555;
+    --moka: #fceade;
+    --black: #000;
+    --transition: .4s ease;
+}
+
+/**************
+basic styles
+**************/
+body {
+    font-family: 'Roboto', sans-serif;;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+}
