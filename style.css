@@ -283,3 +283,32 @@ projects
 #projects .imgContainer:hover .imgIcons {
     bottom: 0;
 }
+
+/***************
+people
+***************/
+#people {
+    padding-bottom: 100px;
+}
+#people img {
+    border-radius: 50%;
+    width: 80%;
+    margin: -100px auto 0 auto;
+}
+#people .row:nth-child(2) {
+    margin-top: 100px;
+}
+#people hr {
+    border: none;
+    height: 1px;
+    background: var(--orange);
+}
+#people i {
+    color: var(--orange);
+    font-size: 1.9rem;
+    transition: var(--transition);
+    margin: 0 8px;
+}
+#people i:hover {
+    color: var(--siva);
+}
