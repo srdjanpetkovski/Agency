@@ -7,6 +7,9 @@
     --black: #000;
     --transition: .4s ease;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /**************
 basic styles
@@ -16,6 +19,14 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
+}
+.py-5 {
+    padding: 100px 0 !important;
+}
+.title h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    color: var(--orange);
 }
 
 /***************
@@ -112,4 +123,163 @@ banner icons
 }
 .bannerIcons i:hover {
     color: var(--black);
+}
+
+/***************
+services
+***************/
+#services {
+    margin-top: 100px;
+}
+#services i {
+    font-size: 60px;
+    color: var(--white);
+    background: var(--orange);
+    padding: 50px;
+    transition: var(--transition);
+}
+#services i:hover {
+    background: var(--black);
+
+}
+#services .fa-apple {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+#services .fa-android {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+#services .fa-php {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+#services .fa-js {
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+/***************
+contact
+***************/
+#contact {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+}
+#contact .row {
+    height: 45vh;
+}
+#contact h2 {
+    color: var(--white);
+    font-size: 5em;
+    text-transform: uppercase;
+}
+#contact input {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid var(--white);
+    border-radius: 0;
+    font-size: 2.5em;
+}
+#contact button {
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 2em;
+    padding: 10px 30px;
+    border: 2px solid var(--orange);
+    text-transform: uppercase;
+    background: transparent;
+    margin-left: 30px;
+    transition: var(--transition);
+}
+#contact button:hover {
+    text-decoration: none;
+    color: var(--black);
+    background: var(--orange);
+}
+
+/***************
+team
+***************/
+.carousel-caption {
+    background: var(--orange);
+    bottom: 100px;
+}
+#team .row {
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background: transparent;
+    border: none;
+}
+
+/***************
+about
+***************/
+#about {
+    background-image: url(img/about-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    padding: 100px 0 200px 0;
+}
+#about img {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+#about .card-header {
+    background: var(--orange);
+}
+#about .card-header .btn {
+    color: var(--black);
+    font-size: 25px;
+    text-decoration: none;
+}
+#about .card-header .btn:hover {
+    color: var(--white);
+    text-decoration: none;
+}
+.btn-link::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0a4";
+}
+
+/***************
+projects
+***************/
+#projects .col-md-3 {
+    padding: 0 !important;
+}
+#projects .imgContainer {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+    overflow: hidden;
+}
+#projects .imgContainer img:hover {
+    opacity: .7;
+    transition: var(--transition);
+    cursor: pointer;
+}
+#projects .imgIcons {
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+    width: 100%;
+    position: absolute;
+    bottom: -5rem;
+    transition-duration: 1s;
+    padding: 20px 0;
+}
+#projects i {
+    color: var(--orange);
+    font-size: 35px;
+    transition: var(--transition);
+    margin: 0 10px;
+}
+#projects i:hover {
+    color: var(--siva);
+}
+#projects .imgContainer:hover .imgIcons {
+    bottom: 0;
 }
