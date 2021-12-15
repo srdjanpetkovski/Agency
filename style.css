@@ -312,3 +312,47 @@ people
 #people i:hover {
     color: var(--siva);
 }
+
+/***************
+pricing
+***************/
+#pricing .card {
+    border-radius: 0;
+}
+#pricing .card-title {
+    padding-top: 20px;
+}
+.priceNum {
+    position: relative;
+    background: var(--moka);
+}
+.money {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 25px;
+}
+.moneyNum {
+    font-size: 60px;
+}
+.moneyEnd {
+    font-size: 17px;
+}
+.btn {
+    background: var(--orange);
+    transition: var(--transition);
+    border-radius: none;
+}
+.btn:hover {
+    background: var(--siva);
+    color: var(--white);
+}
+#pricing .list-group li:first-child {
+    padding-top: 50px;
+}
+#pricing .list-group {
+    border-radius: 0 !important;
+}
+#pricing .action {
+    background: var(--orange);
+}
